@@ -1,3 +1,7 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { WrapperComponent } from './wrapper/wrapper.component';
+
+export const routes: Routes = [
+  { path: '', component: WrapperComponent, pathMatch: 'full' },
+];
