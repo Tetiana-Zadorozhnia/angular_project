@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./list-section.component.css'],
 })
 export class ListSectionComponent {
-  @Input() items: { text: string }[] = [
+  items: { text: string }[] = [
     {
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Libero id faucibus nisl tincidunt eget nullam non nisi. Nibh tellus molestie nunc non blandit massa enim nec.',
     },

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,12 +9,12 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./demo-button.component.css'],
 })
 export class DemoButtonComponent {
-  @Input() link: { label: string; url: string } = {
+  link: { label: string; url: string } = {
     label: 'Демо версія',
     url: '#',
   };
 
-  @Input() eyes: { eyesSrc: string; url: string } = {
+  eyes: { eyesSrc: string; url: string } = {
     eyesSrc: '../assets/images/eyes.svg',
     url: '#',
   };

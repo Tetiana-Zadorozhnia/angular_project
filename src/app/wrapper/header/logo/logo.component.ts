@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -15,10 +15,10 @@ export class LogoComponent {
     this.showBurgerMenu = !this.showBurgerMenu;
   }
 
-  @Input() burgerPath: string = '../../assets/images/icons.svg#icon-burger';
-  @Input() logoUrl: string = '../../assets/images/logo.svg';
+  burgerPath: string = '../../assets/images/icons.svg#icon-burger';
+  logoUrl: string = '../../assets/images/logo.svg';
 
-  @Input() links: { label: string; url: string }[] = [
+  links: { label: string; url: string }[] = [
     { label: 'Сервіси', url: '#' },
     { label: 'Послуги', url: '#' },
     { label: 'Клієнти', url: '#' },

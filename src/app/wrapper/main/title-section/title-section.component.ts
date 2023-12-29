@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,9 +9,9 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./title-section.component.css'],
 })
 export class TitleSectionComponent {
-  @Input() title: { label: string } = { label: 'Мультибонусний рахунок' };
+title: { label: string } = { label: 'Мультибонусний рахунок' };
 
-  @Input() paragraphs: { text: string }[] = [
+paragraphs: { text: string }[] = [
     {
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget nullam non nisi. Nibh tellus molestie nunc non blandit massa enim nec. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Condimentum vitae sapien pellentesque habitant morbi tristique senectus. Tellus orci ac auctor augue mauris augue neque gravida in. Nunc mattis enim ut tellus elementum sagittis vitae et. Viverra justo nec ultrices dui sapien eget. Arcu dictum varius duis at consectetur lorem. Diam quam nulla porttitor massa id. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui.',
     },

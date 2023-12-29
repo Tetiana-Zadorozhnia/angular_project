@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,9 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./update-section.component.css'],
 })
 export class UpdateSectionComponent {
-  @Input() today: number = Date.now();
+ today: number = Date.now();
 
-  @Input()
   updateSystem: { label: string; url: string } = {
     label: '#оновлення системи',
     url: '#',
